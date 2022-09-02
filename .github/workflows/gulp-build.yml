@@ -74,7 +74,7 @@ jobs:
       # Show environment
       - name: Show env
         run: |
-          echo "i'm on dev""
+          echo "i'm on dev"
 
   # Job name
   rclone-prod:
