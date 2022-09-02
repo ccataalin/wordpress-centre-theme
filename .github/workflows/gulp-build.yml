@@ -77,10 +77,15 @@ jobs:
           echo "i'm on dev"
 
       # Show files
-      - name: Show files
+#       - name: Show files
+#         run: |
+#           ls -l --time-style="+%s" build/
+#           ls -l --time-style="+%s" src/scss/
+
+      # Show style.css content
+      - name: Show style.css content
         run: |
-          ls -l --time-style="+%s" build/
-          ls -l --time-style="+%s" src/scss/
+          cat build/style.css
 
   # Job name
   rclone-prod:
@@ -101,7 +106,7 @@ jobs:
           echo "i'm on prod"
 
       # Show files
-      - name: Show files
-        run: |
-          ls -l --time-style="+%s" build/
-          ls -l --time-style="+%s" src/scss/
+#       - name: Show files
+#         run: |
+#           ls -l --time-style="+%s" build/
+#           ls -l --time-style="+%s" src/scss/
