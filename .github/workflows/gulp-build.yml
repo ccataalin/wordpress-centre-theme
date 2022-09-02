@@ -76,6 +76,11 @@ jobs:
         run: |
           echo "i'm on dev"
 
+      # Show files
+      - name: Show files
+        run: |
+          ls -l --time-style="+%s"
+
   # Job name
   rclone-prod:
     # Run after build
@@ -93,3 +98,8 @@ jobs:
       - name: Show env
         run: |
           echo "i'm on prod"
+
+      # Show files
+      - name: Show files
+        run: |
+          ls -l --time-style="+%s"
