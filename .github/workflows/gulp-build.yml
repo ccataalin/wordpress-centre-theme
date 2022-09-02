@@ -48,7 +48,7 @@ jobs:
           git status
           git add --force build/*
           git status
-          git status --porcelain || git commit -am "update gulp output files"
+          git commit -am "update gulp output files"
         shell: bash
 
       # Push
