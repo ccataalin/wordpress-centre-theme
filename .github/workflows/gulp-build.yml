@@ -71,8 +71,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 2
-      - run: git checkout HEAD^
+          ref: ${{ (github.event.release.target_commitish || github.ref_name) }}
 
       # Show environment
       - name: Show env
