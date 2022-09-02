@@ -79,7 +79,8 @@ jobs:
       # Show files
       - name: Show files
         run: |
-          ls -l --time-style="+%s"
+          ls -l --time-style="+%s" build/
+          ls -l --time-style="+%s" src/scss/
 
   # Job name
   rclone-prod:
@@ -102,4 +103,5 @@ jobs:
       # Show files
       - name: Show files
         run: |
-          ls -l --time-style="+%s"
+          ls -l --time-style="+%s" build/
+          ls -l --time-style="+%s" src/scss/
